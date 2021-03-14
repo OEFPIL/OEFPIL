@@ -86,7 +86,7 @@ plot.OEFPIL <- function(x, xx, signif.level, interval, new.obs.variance, ...) {
 
   CB <- confBands(x, xx = xx, signif.level = signif.level, new.obs.variance = new.obs.variance)
 
-  plot(x_1, y, xlab = idp.var.name, ylab = dep.var.name, ... = ...)
+  plot(x_1, y, xlab = idp.var.name, ylab = dep.var.name, main = "Estimation of a curve by Iterated Linearization", ... = ...)
 
   lines(CB$xx, CB$yy, lwd = 2, col = "black")
 
