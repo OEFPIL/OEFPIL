@@ -110,5 +110,10 @@ For more information and examples see:
 ```r
 ?OEFPIL
 ```
+This software OEFPIL was financed by the Technology Agency of the Czech Republic within the ZETA Programme. https://www.tacr.cz . 
+
+<p align= "center">
+<img src = "man/figure/logo_TACR.png" width = "200">
+</p>
 
 
