@@ -6,7 +6,7 @@
 #' @param xx  a sequence of x-coordinates of points for computing and plotting confidence bands. If missing, the default sequence \code{seq(from = min(x), to = max(x), length.out = 301)} is used.
 #' @param signif.level a numerical value or a vector of significance levels for confidence bands.
 #' @param interval a character vector. It states type of an interval to draw. Following values are possible: \code{"conf"} for confidence interval, \code{"pred"} for prediction interval or \code{c("conf", "pred")} for both. If missing, no intervals are plotted.
-#' @param new.obs.variance the variance of a new observation for prediction interval computing.
+#' @param new.obs.variance the variance of a new observation for prediction interval computing (see \code{\link{confBands.OEFPIL}}).
 #' @param ... additional arguments (same as in \link{plot} function) affecting the plot.
 #' @details If the \code{signif.level} argument is missing, even though an \code{interval} argument is set to \code{"conf"}, the default value 0.05 is used.
 #'          The line type is set to \code{'dashed'} for confidence bands and \code{'dotted'} for prediction bands.

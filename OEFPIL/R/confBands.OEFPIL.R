@@ -11,6 +11,8 @@
 #'
 #' @details An argument \code{signif.level} can be one numerical value or vector of numerical values of significance levels for confidence intervals.
 #'
+#' If \code{new.obs.variance} is not defined by user, the average variance in the dependent variable is used to compute prediction intervals.
+#'
 #' @return Returns an object of type list containing the following components.
 #'
 #' \item{xx}{a numerical vector of points where intervals are calculated.}
