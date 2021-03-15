@@ -10,9 +10,9 @@ Authors@R: c(person(given = "Stanislav", family = "Zámečník", email = "xzamec
     person(given = "Masaryk University, a public university, ID: 00216224", role = c("cph")))
 Description: Package for optimal estimation of function parameters by Iterated Linearization.
 License: GPL (>=2)
-Depends: R(>= 3.5.0)
+Depends: R(>= 3.6.0)
 Imports: Deriv, MASS, ggplot2, matrixcalc, minpack.lm, plyr
-URL: https://github.com/stazam/OEFPIL-
+URL: https://github.com/stazam/OEFPIL
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
