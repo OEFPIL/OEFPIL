@@ -1,11 +1,3 @@
----
-title: "README"
-author: "stanislav zamecnik"
-date: "15 3 2021"
-output:
-  html_document: default
-  pdf_document: default
----
 # OEFPIL
 
 
