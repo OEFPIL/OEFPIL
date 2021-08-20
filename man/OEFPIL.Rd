@@ -110,10 +110,10 @@ summary(output.form)
 
 }
 \references{
-Kubacek, L. and Kubackova, L.\emph{Statistika a metrologie} (2000). Univerzita Palackeho v Olomouci.
+Kubacek, L. and Kubackova, L. (2000) \emph{Statistika a metrologie}. Univerzita Palackeho v Olomouci.
 
-   Koning, R., Wimmer, G. and Witkovsky, V. \emph{Ellipse fitting by nonlinear constraints to demodulate quadrature homodyne interferometer signals and to determine the statistical uncertainty of the interferometric phase}.
-    Measurement Science and Technology (2014).
+   Koning, R., Wimmer, G. and Witkovsky, V. (2014) \emph{Ellipse fitting by nonlinear constraints to demodulate quadrature homodyne interferometer signals and to determine the statistical uncertainty of the interferometric phase}.
+    Measurement Science and Technology.
 }
 \seealso{
 \code{\link{NanoIndent.OEFPIL}} and function \code{\link[minpack.lm]{nlsLM}} from \code{minpack.lm} package for nonlinear least square algorithms.

@@ -49,10 +49,10 @@
 #'
 #' @note The symbol \code{pi} is reserved for the Ludolf's constant. So naming one of the model´s parameters by this symbol results in constant entry of the model.
 #'
-#' @references Kubacek, L. and Kubackova, L.\emph{Statistika a metrologie} (2000). Univerzita Palackeho v Olomouci.
+#' @references Kubacek, L. and Kubackova, L. (2000) \emph{Statistika a metrologie}. Univerzita Palackeho v Olomouci.
 #'
-#'    Koning, R., Wimmer, G. and Witkovsky, V. \emph{Ellipse fitting by nonlinear constraints to demodulate quadrature homodyne interferometer signals and to determine the statistical uncertainty of the interferometric phase}.
-#'     Measurement Science and Technology (2014).
+#'    Koning, R., Wimmer, G. and Witkovsky, V. (2014) \emph{Ellipse fitting by nonlinear constraints to demodulate quadrature homodyne interferometer signals and to determine the statistical uncertainty of the interferometric phase}.
+#'     Measurement Science and Technology.
 #'
 #' @seealso \code{\link{NanoIndent.OEFPIL}} and function \code{\link[minpack.lm]{nlsLM}} from \code{minpack.lm} package for nonlinear least square algorithms.
 #'
@@ -552,7 +552,7 @@ OEFPILIter <- function(y0, x0, L, CM, max.iter = 100, see.iter.val = FALSE,
     Se <- diag(Esing$d)
     Seinv <- diag(1 / (Esing$d))
     Fmat <- Ve %*% Seinv
-    G <- forwardsolve(t(Lmat), Ue)
+    G <- backsolve(t(Lmat), Ue)
     Q21 <- Fmat %*% t(G)
     Q11 <- chol2inv(Lmat) - G %*% t(G)
     Q22 <- - Fmat %*% t(Fmat)
@@ -586,7 +586,7 @@ OEFPILIter <- function(y0, x0, L, CM, max.iter = 100, see.iter.val = FALSE,
     }
     ## control of correctness of updated (improved) values (L1)
 
-    # The final number of iterations including zero step.
+    # The final number of performed iterations.
     it_num <- it_num + 1
 
     ## Condition which save and output all values of estimates in process of iteration
@@ -598,6 +598,12 @@ OEFPILIter <- function(y0, x0, L, CM, max.iter = 100, see.iter.val = FALSE,
       print(data.frame(L1, row.names = ""))
       print(- Q22)
       print("##########################################")
+    }
+    
+    if (it_num == max.iter) {
+      logg <- paste("The maximum number of iterations (i.e. ", it_num,") has been reached.", "\n", sep = "")
+      message(logg)
+      logs <- paste(na.omit(logs), logg, sep = "//")
     }
 
     if (!missing(save.file.name)) {

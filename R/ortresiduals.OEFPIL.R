@@ -75,7 +75,6 @@ ortresiduals.OEFPIL <- function(object, min.c){
 
   ftomin <- NULL
   ## rewriting main function in optimize requested format - ftomin() function
-
   formstring <- strsplit(object$contents$input.form.string, "~")[[1]][2]
   formstringx <- gsub(xname, "x", formstring)
   eval(parse(text = paste("ftomin <- function(x){", formstringx, "}", sep = "")))
