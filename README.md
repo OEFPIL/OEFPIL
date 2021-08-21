@@ -12,33 +12,34 @@ output:
 ## Optimal Estimation of Parameters by Iterated Linearization
 
 The original version of this software was written in R by Stanislav Zamecnik, Zdenka Gerslova and Vojtech Sindlar in year 2021. The package is based on theoretical background of work of prof. Gejza Wimmer and afterwards implemented by mentioned authors. 
-Main features of package include:
+Main features of the package include:
 
 - estimation of parameters of nonlinear function by iterated linearization
 - possibility to use generic functions to OEFPIL objects
   - extract confidence bands for set of points
   - confidence intervals for parameters 
   - extract summary of used model
-  - get covariance matrix for model parameters.
-- plot the OEFPIL object, when one is created in a different ways
+  - get covariance matrix for model parameters
+- plot the OEFPIL object in a different ways
   - plot of estimated curve 
   - plot of estimated curve with ggplot2 package
 - count orthogonal residuals for OEFPIL object
 - print out information about OEFPIL object
 - calculate estimates of parameters in Nanoindentation
-- two datasets were added to the package to show functionality
+- two datasets from nanoindentation measurements
 
 ## Installation
 
-You can install release from Github repository by:
-
-``` r
-devtools::install_github("stazam/OEFPIL-")
-``` 
-or you install this release from [CRAN](https://CRAN.R-project.org) with: 
+You can install the release version of package from [CRAN](https://CRAN.R-project.org): 
 
 ``` r
 install.packages("OEFPIL")
+``` 
+
+Or the development version from GitHub repository:
+
+``` r
+devtools::install_github("OEFPIL/OEFPIL")
 ``` 
 
 ## Usage
