@@ -1,7 +1,7 @@
 ---
 title: "README"
 author: "stanislav zamecnik"
-date: "15 3 2021"
+date: "03 11 2021"
 output:
   html_document: default
   pdf_document: default
@@ -11,7 +11,7 @@ output:
 
 ## Optimal Estimation of Parameters by Iterated Linearization
 
-The original version of this software was written in R by Stanislav Zamecnik, Zdenka Gerslova and Vojtech Sindlar in year 2021. The package is based on theoretical background of work of prof. Gejza Wimmer and afterwards implemented by mentioned authors. 
+The original version of this software was written in R by Stanislav Zámečník, Zdeňka Geršlová and Vojtěch Šindlář in year 2021. The package is based on theoretical background of work of prof. Gejza Wimmer and afterwards implemented by mentioned authors. 
 Main features of the package include:
 
 - estimation of parameters of nonlinear function by iterated linearization
