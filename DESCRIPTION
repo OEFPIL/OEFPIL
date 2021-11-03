@@ -2,7 +2,7 @@ Package: OEFPIL
 Type: Package
 Title: Optimal Estimation of Function Parameters by Iterated Linearization 
 Version: 0.1.1
-Authors@R: c(person(given = "Stanislav", family = "Zamecnik", email = c("xzamecniks@math.muni.cz"), role = c("aut", "cre")),
+Authors@R: c(person(given = "Stanislav", family = "Zamecnik", email = c("zamecnik@math.muni.cz"), role = c("aut", "cre")),
     person(given = "Vojtech", family = "Sindlar", comment = c("<xsindlarv@math.muni.cz>"), role = c("aut")),
     person(given = "Zdenka", family = "Gerslova", comment = c("<gerslovaz@math.muni.cz>"), role = c("aut")),
     person(given = "Gejza", family = "Wimmer", comment = c("<wimmer@mat.savba.sk>"), role = "aut"),
