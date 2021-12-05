@@ -4,7 +4,7 @@
 #' @usage OEFPIL(data, form, start.val, CM, max.iter = 100, see.iter.val = FALSE,
 #'        save.file.name, th, signif.level, useNLS = TRUE)
 #'
-#' @param data a data file can be any object of type \code{data.frame} with 2 named columns or \code{list} with 2 elements.
+#' @param data a data file can be any object of type \code{data.frame} with 2 named columns.
 #' @param form an object of class \code{\link[stats]{formula}} (or one that can be coerced to that class): a symbolic description of the model to be fitted. The details of model specification are given under ‘Details’.
 #' @param start.val a named list of starting values of estimating parameters.
 #' @param CM a covariance matrix of \code{data} (See 'Details' for the information about required structure.).
