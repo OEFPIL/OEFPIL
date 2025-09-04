@@ -13,7 +13,7 @@
 #' @param save.file.name a name of the file for saving results. If missing, no output file is saved.
 #' @param th a numerical value, indicating threshold necessary for the iteration stoppage. The default value is \code{.Machine$double.eps ^ (2 / 3)}.
 #' @param signif.level a significance level for the confidence interval. If missing, the default value 0.05 is used.
-#' @param useNLS logical. If \code{TRUE} (the default value), function will set up starting parameters calculated by \code{\link{nlsLM}} function (nonlinear least square estimation).
+#' @param useNLS logical. If \code{TRUE} (the default value), function will set up starting parameters calculated by \code{\link[minpack.lm]{nlsLM}} function (nonlinear least square estimation).
 #'
 #' @details Models for OEPFIL function are specified symbolically. A typical model has the form \code{y ~ f(x, a_1,...,a_n)}, where
 #'
@@ -34,9 +34,9 @@
 #' @return Returns an object of class \code{"OEFPIL"}. It is a list containing the following components
 #'
 #' \item{name_Est}{estimations of model parameters.}
-#' \item{name_upgraded.start.val}{modified starting values of estimating parameters (result from \code{\link{nlsLM}} function).}
+#' \item{name_upgraded.start.val}{modified starting values of estimating parameters (result from \code{\link[minpack.lm]{nlsLM}} function).}
 #' \item{cov.m_Est}{estimated covariance matrix of parameters.}
-#' \item{cov.m_nlsLM}{a covariance matrix of starting values of parameters from \code{\link{nlsLM}} function (if \code{useNLS} was set to \code{TRUE}).}
+#' \item{cov.m_nlsLM}{a covariance matrix of starting values of parameters from \code{\link[minpack.lm]{nlsLM}} function (if \code{useNLS} was set to \code{TRUE}).}
 #' \item{it_num}{number of iterations.}
 #' \item{name_previous.step}{the parameter values from the previous iterative step.}
 #' \item{CI_parameters}{a list of confidence intervals for estimated parameters (a significance level is based on \code{signif.level} argument).}

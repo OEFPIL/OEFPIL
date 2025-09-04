@@ -4,7 +4,7 @@
 #' @usage ortresiduals.OEFPIL(object, min.c)
 #'
 #' @param object an object of class \code{"OEFPIL"} (a result of a call to \code{\link{OEFPIL}}).
-#' @param min.c a numeric value, for defining minimization interval for the \code{\link{optimize}} function (if not defined, default value 0.05 * range(x) is used). Must be positive.
+#' @param min.c a numeric value, for defining minimization interval for the \code{\link[stats]{optimize}} function (if not defined, default value 0.05 * range(x) is used). Must be positive.
 #'
 #' @return Returns an object of type list containing following components
 #'

@@ -26,15 +26,15 @@ OEFPIL(data, form, start.val, CM, max.iter = 100, see.iter.val = FALSE,
 
 \item{signif.level}{a significance level for the confidence interval. If missing, the default value 0.05 is used.}
 
-\item{useNLS}{logical. If \code{TRUE} (the default value), function will set up starting parameters calculated by \code{\link{nlsLM}} function (nonlinear least square estimation).}
+\item{useNLS}{logical. If \code{TRUE} (the default value), function will set up starting parameters calculated by \code{\link[minpack.lm]{nlsLM}} function (nonlinear least square estimation).}
 }
 \value{
 Returns an object of class \code{"OEFPIL"}. It is a list containing the following components
 
 \item{name_Est}{estimations of model parameters.}
-\item{name_upgraded.start.val}{modified starting values of estimating parameters (result from \code{\link{nlsLM}} function).}
+\item{name_upgraded.start.val}{modified starting values of estimating parameters (result from \code{\link[minpack.lm]{nlsLM}} function).}
 \item{cov.m_Est}{estimated covariance matrix of parameters.}
-\item{cov.m_nlsLM}{a covariance matrix of starting values of parameters from \code{\link{nlsLM}} function (if \code{useNLS} was set to \code{TRUE}).}
+\item{cov.m_nlsLM}{a covariance matrix of starting values of parameters from \code{\link[minpack.lm]{nlsLM}} function (if \code{useNLS} was set to \code{TRUE}).}
 \item{it_num}{number of iterations.}
 \item{name_previous.step}{the parameter values from the previous iterative step.}
 \item{CI_parameters}{a list of confidence intervals for estimated parameters (a significance level is based on \code{signif.level} argument).}
