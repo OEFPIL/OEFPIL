@@ -40,13 +40,13 @@ NanoIndent.OEFPIL(data, alpha.start, m.start, hp.start, unload.data = FALSE, ucu
 
 \item{signif.level}{a significance level for the confidence interval.}
 
-\item{useNLS}{logical. If \code{TRUE} (the default value), function will set up starting parameters calculated by \code{\link{nlsLM}} function (nonlinear least square estimation).}
+\item{useNLS}{logical. If \code{TRUE} (the default value), function will set up starting parameters calculated by \code{\link[minpack.lm]{nlsLM}} function (nonlinear least square estimation).}
 }
 \value{
 Returns an object of class \code{"OEFPIL"}. It is a list containing at least the following components
 
 \item{name_Est}{estimations of model parameters.}
-\item{name_upgraded.start.val}{modified starting values of estimating parameters (result from \code{\link{nlsLM}} function).}
+\item{name_upgraded.start.val}{modified starting values of estimating parameters (result from \code{\link[minpack.lm]{nlsLM}} function).}
 \item{cov.m_Est}{estimated covariance matrix of parameters.}
 \item{it_num}{number of iterations.}
 \item{CI_parameters}{a list of confidence intervals for estimated parameters (a significance level is based on \code{signif.level} argument).}

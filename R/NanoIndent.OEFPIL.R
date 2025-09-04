@@ -21,7 +21,7 @@
 #' @param save.file.name a name of the file for saving results. If missing, no output file is saved.
 #' @param th a numerical value, indicating threshold necessary for the iteration stoppage.
 #' @param signif.level a significance level for the confidence interval.
-#' @param useNLS logical. If \code{TRUE} (the default value), function will set up starting parameters calculated by \code{\link{nlsLM}} function (nonlinear least square estimation).
+#' @param useNLS logical. If \code{TRUE} (the default value), function will set up starting parameters calculated by \code{\link[minpack.lm]{nlsLM}} function (nonlinear least square estimation).
 #'
 #' @details In this special case of the \code{OEFPIL} function, the dependence of parameters is fixed in
 #' the form: \eqn{F = \alpha * (h - h_p)^m}, where \eqn{F} is load and \eqn{h} depth measured within a nanoindentation process.
@@ -38,7 +38,7 @@
 #' @return Returns an object of class \code{"OEFPIL"}. It is a list containing at least the following components
 #'
 #' \item{name_Est}{estimations of model parameters.}
-#' \item{name_upgraded.start.val}{modified starting values of estimating parameters (result from \code{\link{nlsLM}} function).}
+#' \item{name_upgraded.start.val}{modified starting values of estimating parameters (result from \code{\link[minpack.lm]{nlsLM}} function).}
 #' \item{cov.m_Est}{estimated covariance matrix of parameters.}
 #' \item{it_num}{number of iterations.}
 #' \item{CI_parameters}{a list of confidence intervals for estimated parameters (a significance level is based on \code{signif.level} argument).}
